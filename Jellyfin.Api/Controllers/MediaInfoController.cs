@@ -141,7 +141,7 @@ public class MediaInfoController : BaseJellyfinApiController
         mediaSourceId ??= playbackInfoDto?.MediaSourceId;
         liveStreamId ??= playbackInfoDto?.LiveStreamId;
         autoOpenLiveStream ??= playbackInfoDto?.AutoOpenLiveStream ?? false;
-        enableDirectPlay ??= playbackInfoDto?.EnableDirectPlay ?? true;
+        enableDirectPlay = false;
         enableDirectStream ??= playbackInfoDto?.EnableDirectStream ?? true;
         enableTranscoding ??= playbackInfoDto?.EnableTranscoding ?? true;
         allowVideoStreamCopy ??= playbackInfoDto?.AllowVideoStreamCopy ?? true;
